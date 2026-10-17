@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лаб 6 - Зургийн цомог портал (Gallery)</title>
+  <title>Лаб 6 - Зургийн цомог портал</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,6 @@
   <header>
     <div class="header-container">
       <h1>
-        <!-- Inline SVG logo -->
         <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
           <circle cx="8.5" cy="8.5" r="1.5"></circle>
@@ -21,7 +20,7 @@
         Зургийн Цомог Портал
       </h1>
       
-      <!-- Dark Mode Theme Toggle Button -->
+      <!-- Theme Toggle -->
       <button id="theme-toggle" class="btn-theme" aria-label="Dark mode шилжүүлэх">
         <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="5"></circle>
@@ -45,7 +44,7 @@
       <p>CSS3 Animation, 3D Transform, Dark Mode ба Мультимедиа туршилт</p>
     </section>
 
-    <!-- Gallery Grid with 3D Flip Cards & Custom Property Stagger (--i) -->
+    <!-- Gallery Grid Section -->
     <section class="gallery-section">
       <h3 class="section-title">3D Flip Card Зургийн Цомог</h3>
       
@@ -124,7 +123,7 @@
               <button class="btn-flip">Буцах</button>
             </div>
           </div>
-        </article>
+        </div>
 
         <!-- Card 6 -->
         <div class="card-3d" style="--i: 6;">
@@ -144,15 +143,14 @@
       </div>
     </section>
 
-    <!-- Multimedia Section (Video, Track, Iframe) -->
+    <!-- Multimedia Section -->
     <section class="media-section">
       <h3 class="section-title">Мультимедиа Агуулга</h3>
       
       <div class="media-grid">
-        <!-- Local Video with Subtitle Track -->
         <div class="media-card">
           <h4>🎥 HTML5 Видео ба Subtitle Track</h4>
-          <video controls preload="metadata" poster="img/photo1.jpg" width="100%">
+          <video controls preload="metadata" poster="img/photo1.jpg">
             <source src="video/clip.mp4" type="video/mp4">
             <source src="video/clip.webm" type="video/webm">
             <track src="video/clip.mn.vtt" kind="subtitles" srclang="mn" label="Монгол" default>
@@ -160,7 +158,6 @@
           </video>
         </div>
 
-        <!-- Accessible & Secure Responsive Iframe -->
         <div class="media-card">
           <h4>🌐 Хүртээмжтэй Iframe (YouTube / Map)</h4>
           <div class="iframe-wrapper">
@@ -169,8 +166,7 @@
               title="Мультимедиа жишээ видео" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen
-              loading="lazy"
-              sandbox="allow-scripts allow-same-origin allow-popups">
+              loading="lazy">
             </iframe>
           </div>
         </div>
