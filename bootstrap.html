@@ -23,10 +23,17 @@
 <body class="bg-body text-body">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm py-3">
+    <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand fw-bold" href="#">📸 Зургийн Цомог (Bootstrap)</a>
-      <button class="btn btn-outline-secondary btn-sm" id="darkModeToggle">Dark Mode</button>
+      
+      <!-- Хуудас хооронд шилжих товчнууд болон Dark Mode -->
+      <div class="d-flex align-items-center gap-2">
+        <a href="index.html" class="btn btn-outline-primary btn-sm">Лаб 6/7</a>
+        <a href="bootstrap.html" class="btn btn-primary btn-sm">Bootstrap</a>
+        <a href="tailwind.html" class="btn btn-outline-primary btn-sm">Tailwind</a>
+        <button class="btn btn-outline-secondary btn-sm ms-2" id="darkModeToggle">Dark Mode</button>
+      </div>
     </div>
   </nav>
 
@@ -39,7 +46,7 @@
     <!-- 3 баганатай Card Grid -->
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card h-400 shadow-sm">
+        <div class="card h-100 shadow-sm">
           <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Зураг 1">
           <div class="card-body">
             <h5 class="card-title">Цомог #1</h5>
@@ -49,7 +56,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-400 shadow-sm">
+        <div class="card h-100 shadow-sm">
           <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Зураг 2">
           <div class="card-body">
             <h5 class="card-title">Цомог #2</h5>
@@ -59,7 +66,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-400 shadow-sm">
+        <div class="card h-100 shadow-sm">
           <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Зураг 3">
           <div class="card-body">
             <h5 class="card-title">Цомог #3</h5>

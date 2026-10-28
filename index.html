@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Лаб 6 - Зургийн цомог портал</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Хуудас хооронд шилжих товчны загвар */
+    .nav-buttons {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-left: 20px;
+    }
+    .nav-btn {
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+    .nav-btn.active {
+      background-color: #3b82f6;
+      color: #ffffff;
+      border-color: #3b82f6;
+    }
+    .nav-btn:hover {
+      opacity: 0.85;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,21 +59,30 @@
         Зургийн Цомог Портал
       </h1>
       
-      <!-- Theme Toggle -->
-      <button id="theme-toggle" class="btn-theme" aria-label="Dark mode шилжүүлэх">
-        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <span id="theme-text">Dark Mode</span>
-      </button>
+      <div class="header-right">
+        <!-- Хуудас хооронд шилжих товчнууд -->
+        <nav class="nav-buttons">
+          <a href="index.html" class="nav-btn active">Лаб 6/7</a>
+          <a href="bootstrap.html" class="nav-btn">Bootstrap</a>
+          <a href="tailwind.html" class="nav-btn">Tailwind</a>
+        </nav>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-theme" aria-label="Dark mode шилжүүлэх">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <span id="theme-text">Dark Mode</span>
+        </button>
+      </div>
     </div>
   </header>
 
